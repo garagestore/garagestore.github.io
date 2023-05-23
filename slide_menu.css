@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-size: 20px;
+    overflow-x: hidden;
+}
+
+/* :root{
+    --main_color:#082032;
+    --second_color:#2C394B;
+    --three_color:#334756;
+    --text_color:#FF4C29;
+    --icon_color:#fff;
+}
+:root{
+    --main_color:#F9F5F6;
+    --second_color:#F8E8EE;
+    --three_color:#FDCEDF;
+    --text_color:#F2BED1;
+    --icon_color:#000;
+}
+:root{
+    --main_color:#3C486B;
+    --second_color:#F0F0F0;
+    --three_color:#F9D949;
+    --text_color:#F45050;
+    --icon_color:#fff;
+} */
+body{
+    background-color: var(--main_color);
+}
+
+main{
+    width: 100vw;
+    min-height: 100vh;
+    max-height: max-content;
+    display: flex;
+    padding: 4%;
+}
+
+#slide_menu{
+    background-color: #2f2d2d38;
+    backdrop-filter: blur(5px);
+    width: 100vw;
+    height: 100vh;
+    box-shadow: -50px 0 10px #00000044;
+    display: flex;
+    justify-content:left;
+    align-items: stretch;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-120%);
+    transition: 0.35s;
+    z-index: 100;
+}
+
+#slide_menu ul{
+    background-color: var(--second_color);
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index:120;
+}
+
+#slide_menu ul li{
+    display: flex;
+    width: 100%;
+    /* background-color: aqua; */
+    justify-content: center;
+}
+
+.subtitles{
+    font-size:1.3rem;
+    color: var(--icon_color);
+}
+button{
+    cursor: pointer;
+    background-color: var(--text_color);
+    padding: 2px;
+    width: 200px;
+    height: 70px;
+    border:3px solid var(--text_color);
+    border-radius: 10px;
+    transition: background 0.3s;
+    overflow: hidden;
+    z-index: 70;
+}
+
+#slide_button{
+    /* max-width: 5vw; */
+    /* height: 5vh; */
+    padding: 0;
+    box-shadow: 0 0 10px var(--main_color);
+    
+}
+button i{
+    color:var(--icon_color);
+    font-weight: bold;
+    font-size: 2.3rem;
+}
+
+button:hover{
+    background-color: var(--main_color);    
+}
+
+button:active{
+    transition: 0s;
+    background-color: var(--text_color);
+}
+
+#carrito_button{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#slide_button{
+    margin: 10px;
+    position:fixed;
+    top: 10%;
+    left: 0;
+    /* z-index:70; */
+    width: max(7vw,100px);
+    padding: 0 5px;
+}
+
+.slide_buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}

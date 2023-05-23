@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="garage.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+        <title>Garage store</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="slide_menu.css">
+        <link rel="stylesheet" href="scrollbar.css">
+        <link rel="stylesheet" href="productos.css">
+        <link rel="stylesheet" href="galeria.css">
+        <link rel="stylesheet" href="modal.css">
+        <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="main_productos.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    </head>
+    <body>
+        <div id="modal_content">
+            <h2 id="titulo_modal"></h2>
+            <div id="hr"></div>
+            <p id="mensaje_modal">
+            </p>
+            <div id="modal_buttons_container">
+                <button id="boton_modal">cerrar</button>
+            </div>
+        </div>
+         
+        <main>
+            <div id="slide_menu">
+                <ul id="menu">
+                    <li>
+                        <button id="carrito_button" class="slide_buttons">
+                            <i class="bi bi-cart"></i>
+                            <!-- <h4 class="subtitles">carrito</h4> -->
+                            <a href="#carrito_content" class="subtitles">carrito</a>
+                        </button>
+                        
+                    </li>
+                    <li>
+                        <button id="modal_button" class="slide_buttons boton_productos">
+                            <!-- <i class="bi bi-suit-heart"></i> -->
+                            <a href="#second_section" class="subtitles">productos</a>
+                        </button>
+                        
+                    </li>
+                    
+                    <li>
+                        <button id="slide_button_close" class="slide_buttons">
+                            <i class="bi bi-x-circle"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <button id="slide_button">
+                <i class="bi bi-list"></i>
+            </button>
+            <article id="main_content">
+                <h1>Garage Store</h1>
+                <section id="main_section">
+                    <img src="personas2.png" alt="ilustracion">
+                    
+                    <p>
+                        Productos de
+                        Anime , Super Heroes , Bandas y Series <3
+                    </p>
+                    <footer id="second_footer">
+                        <a href="https://www.instagram.com/garagestoremxl/" target="_blank"><i class="bi bi-instagram"></i>Instagram</a>
+                        <a href="https://www.facebook.com/garagestoremxl" target="_blank"><i class="bi bi-facebook"></i>Facebook</a>
+                    </footer>
+                </section>
+            </article>
+        </main>
+        <article id="second_content">
+            <section id="ver_productos_content">
+                <button class="boton_productos"><a href="#second_section">Ver todos los productos</a></button>
+            </section>
+            <section id="galeria_content">
+                <h2>Tu anime favorito en un solo lugar</h2>
+                <section id="galeria_productos">
+                    <img src="6.jpg">
+                    <img src="10.jpg">
+                    <img src="7.jpg">
+                    <img src="9.jpg">
+                    <img src="11.jpg">
+                </section>
+                <h3 style="opacity:0.5;text-align: center;">Da click en cualquier producto para verlo a detalle</h3>
+            </section>
+            
+            <section id="second_section">
+                <h2>Nuestros productos</h2>
+                <article id="productos">
+                    <section>
+                        <img src="1.png" alt="" class="imagenes_productos">
+                        <h3 class="titulo_producto">DC Comic`s</h3>
+                        <div class="check_box_container">
+                            <h4>Agregar al carrito</h4>
+                            <input type="checkbox" class="check_producto">
+                        </div>
+                        <div class="content_precio"><h5 class="precio_producto">240</h5><h5>mxn</h5></div>
+                        
+                    </section>
+                    <section>
+                        <img src="2.png" alt="" class="imagenes_productos">
+                        <h3 class="titulo_producto">Cobra kai</h3>
+
+                        <div class="check_box_container">
+                            <h4>Agregar al carrito</h4>
+                            <input type="checkbox" class="check_producto">
+                        </div>
+                        <div class="content_precio"><h5 class="precio_producto">300</h5><h5>mxn</h5></div>
+                    </section>
+
+
+                    <!-- copias -->
+                    <section>
+                        <img src="3.png" alt="" class="imagenes_productos">
+                        <h3 class="titulo_producto">Liga de la justicia</h3>
+                        <div class="check_box_container">
+                            <h4>Agregar al carrito</h4>
+                            <input type="checkbox" class="check_producto">
+                        </div>
+                        <div class="content_precio"><h5 class="precio_producto">240</h5><h5>mxn</h5></div>
+                    </section>
+                    <section>
+                        <img src="4.png" alt="" class="imagenes_productos">
+                        <h3 class="titulo_producto">Joker</h3>
+                        <div class="check_box_container">
+                            <h4>Agregar al carrito</h4>
+                            <input type="checkbox" class="check_producto">
+                        </div>
+                        <div class="content_precio"><h5 class="precio_producto">320</h5><h5>mxn</h5></div>
+                    </section>
+                    <section>
+                        <img src="5.png" alt="" class="imagenes_productos">
+                        <h3 class="titulo_producto">Guns.N.Roses</h3>
+                        <div class="check_box_container">
+                            <h4>Agregar al carrito</h4>
+                            <input type="checkbox" class="check_producto">
+                        </div>
+                        <div class="content_precio"><h5 class="precio_producto">320</h5><h5>mxn</h5></div>
+                    </section>
+
+
+                    <!-- resto -->
+                    <section>
+                        <img src="6.jpg" class="imagenes_productos">
+                        <h3 class="titulo_producto">Freezer</h3>
+                        <div class="check_box_container">
+                            <h4>Agregar al carrito</h4>
+                            <input type="checkbox" class="check_producto">
+                        </div>
+                        <div class="content_precio"><h5 class="precio_producto">250</h5><h5>mxn</h5></div>
+                    </section>
+
+                    <section>
+                        <img src="7.jpg" class="imagenes_productos">
+                        <h3 class="titulo_producto">JoJos</h3>
+                        <div class="check_box_container">
+                            <h4>Agregar al carrito</h4>
+                            <input type="checkbox" class="check_producto">
+                        </div>
+                        <div class="content_precio"><h5 class="precio_producto">250</h5><h5>mxn</h5></div>
+                    </section>
+
+                    <section>
+                        <img src="8.jpg" class="imagenes_productos">
+                        <h3 class="titulo_producto">Undefined</h3>
+                        <div class="check_box_container">
+                            <h4>Agregar al carrito</h4>
+                            <input type="checkbox" class="check_producto">
+                        </div>
+                        <div class="content_precio"><h5 class="precio_producto">250</h5><h5>mxn</h5></div>
+                    </section>
+
+                    <section>
+                        <img src="9.jpg" class="imagenes_productos">
+                        <h3 class="titulo_producto">Daemon Slayer</h3>
+                        <div class="check_box_container">
+                            <h4>Agregar al carrito</h4>
+                            <input type="checkbox" class="check_producto">
+                        </div>
+                        <div class="content_precio"><h5 class="precio_producto">250</h5><h5>mxn</h5></div>
+                    </section>
+
+                    <section>
+                        <img src="10.jpg" class="imagenes_productos">
+                        <h3 class="titulo_producto">ChainsawMan</h3>
+                        <div class="check_box_container">
+                            <h4>Agregar al carrito</h4>
+                            <input type="checkbox" class="check_producto">
+                        </div>
+                        <div class="content_precio"><h5 class="precio_producto">490</h5><h5>mxn</h5></div>
+                    </section>
+
+                    <section>
+                        <img src="11.jpg" class="imagenes_productos">
+                        <h3 class="titulo_producto">Spy X Family</h3>
+                        <div class="check_box_container">
+                            <h4>Agregar al carrito</h4>
+                            <input type="checkbox" class="check_producto">
+                        </div>
+                        <div class="content_precio"><h5 class="precio_producto">490</h5><h5>mxn</h5></div>
+                    </section>
+
+                    <section>
+                        <img src="12.jpg" class="imagenes_productos">
+                        <h3 class="titulo_producto">Llaveros superheroes</h3>
+                        <div class="check_box_container">
+                            <h4>Agregar al carrito</h4>
+                            <input type="checkbox" class="check_producto">
+                        </div>
+                        <div class="content_precio"><h5 class="precio_producto">65</h5><h5>(unit)mxn</h5></div>
+                    </section>
+                    <section>
+                        <img src="13.jpg" class="imagenes_productos">
+                        <h3 class="titulo_producto">Llaveros superheroes</h3>
+                        <div class="check_box_container">
+                            <h4>Agregar al carrito</h4>
+                            <input type="checkbox" class="check_producto">
+                        </div>
+                        <div class="content_precio"><h5 class="precio_producto">65</h5><h5>(unit)mxn</h5></div>
+                    </section>
+                    <section>
+                        <img src="14.jpg" class="imagenes_productos">
+                        <h3 class="titulo_producto">Parches Harry Petter</h3>
+                        <div class="check_box_container">
+                            <h4>Agregar al carrito</h4>
+                            <input type="checkbox" class="check_producto">
+                        </div>
+                        <div class="content_precio"><h5 class="precio_producto">120</h5><h5>(unit)mxn</h5></div>
+                    </section>
+
+                    <section>
+                        <img src="15.jpg" class="imagenes_productos">
+                        <h3 class="titulo_producto">Superman Sudadera</h3>
+                        <div class="check_box_container">
+                            <h4>Agregar al carrito</h4>
+                            <input type="checkbox" class="check_producto">
+                        </div>
+                        <div class="content_precio"><h5 class="precio_producto">590</h5><h5>mxn</h5></div>
+                    </section>
+                    <section>
+                        <img src="16.jpg" class="imagenes_productos">
+                        <h3 class="titulo_producto">Cheetos</h3>
+                        <div class="check_box_container">
+                            <h4>Agregar al carrito</h4>
+                            <input type="checkbox" class="check_producto">
+                        </div>
+                        <div class="content_precio"><h5 class="precio_producto">280</h5><h5>mxn</h5></div>
+                    </section>
+                    <section>
+                        <img src="17.jpg" class="imagenes_productos">
+                        <h3 class="titulo_producto">Undefined</h3>
+                        <div class="check_box_container">
+                            <h4>Agregar al carrito</h4>
+                            <input type="checkbox" class="check_producto">
+                        </div>
+                        <div class="content_precio"><h5 class="precio_producto">280</h5><h5>mxn</h5></div>
+                    </section>
+                    <section>
+                        <img src="18.jpg" class="imagenes_productos">
+                        <h3 class="titulo_producto">Stranger things</h3>
+                        <div class="check_box_container">
+                            <h4>Agregar al carrito</h4>
+                            <input type="checkbox" class="check_producto">
+                        </div>
+                        <div class="content_precio"><h5 class="precio_producto">490</h5><h5>mxn</h5></div>
+                    </section>
+                    
+                </article>
+            </section>
+        </article>
+
+        <article id="carrito_content">
+            <section id="carrito">
+                
+                <div id="content_carrito">
+                    <div id="content_products">
+
+                    </div>
+
+                    <div id="fecha_entrega_content">
+                        <h5 class="carrito_textos">selecciona la fecha de entrega</h5>
+                        <input type="date" id="fecha_entrega">
+                    </div>
+                    <button id="carrito_boton_comprar">Realizar compra</button>
+                    <div id="carrito_boton_close">
+                        <button id="carrito_close"><i class="bi bi-x-circle"></i></button>
+                    </div>
+
+
+
+
+                    
+                    
+                </div>
+            </section>
+        </article> 
+
+        <footer id="footer">
+            <ul>
+                <li>De Morquecho Soto Sergio Manuel</li>
+                <li>Pagina conceptual</li>
+                <li>Dirección: Tianguis de la Walmart Mexicali BC</li>
+            </ul>
+            <img src="logo.png" >
+        </footer>
+        <script src="main.js"></script>
+    </body>
+</html>

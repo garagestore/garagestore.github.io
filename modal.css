@@ -1,0 +1,64 @@
+/* :root{
+    --main_color:#082032;
+    --second_color:#2C394B;
+    --three_color:#334756;
+    --text_color:#FF4C29;
+    --icon_color:#fff;
+} */
+#modal_content{
+    position: fixed;
+    width: max(50vw,300px);
+    /* width: 50vw; */
+    /* height: 30vh; */
+    height: max-content;
+    background-color: var(--second_color);
+    z-index: 60;
+    /* margin: 5px; */
+    border: 5px solid var(--three_color);
+    border-radius: 10px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    top: 10%;
+    left: min(25%,15%);
+    
+    transform: scale(0);
+    transition: transform 0.1s;
+    z-index: 500;
+    box-shadow: 0 0 30px 20px var(--main_color);
+}
+
+#titulo_modal{
+    margin: 0;
+    background-color: transparent;
+    border: 0;
+    text-shadow: 0 0 10px var(--main_color);
+    font-size: 2rem;
+
+}
+
+#hr{
+    width:100%;
+    min-height:3px;
+    height:1%;
+    background-color:var(--three_color);
+    margin:2% 0;
+}
+#mensaje_modal{
+    padding: 2%;
+    text-align: center;
+    text-shadow: 0 0 10px var(--main_color);
+}
+
+#modal_buttons_container{
+    background-color: #33475653;
+    display: flex;
+    justify-content: right;
+    padding: 1%;
+    /* padding-top:0 ; */
+}
+
+#boton_modal{
+    width: auto;
+    height: auto;
+    padding: 1%;
+}

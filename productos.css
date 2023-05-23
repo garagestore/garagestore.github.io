@@ -1,0 +1,109 @@
+/* :root{
+    --main_color:#082032;
+    --second_color:#2C394B;
+    --three_color:#334756;
+    --text_color:#FF4C29;
+    --icon_color:#fff;
+} */
+/* :root{
+    --main_color:#F9F5F6;
+    --second_color:#F8E8EE;
+    --three_color:#FDCEDF;
+    --text_color:#F2BED1;
+    --icon_color:#000;
+} */
+/* :root{
+    --main_color:#3C486B;
+    --second_color:#F0F0F0;
+    --three_color:#F9D949;
+    --text_color:#F45050;
+    --icon_color:#fff;
+} */
+
+/* productos */
+#productos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%,330px),1fr));
+    grid-auto-rows: 60vh;
+    /* background-color: #FF4C29; */
+    grid-gap: 1.1vw;
+    padding: 1vw;
+}
+
+#productos section{
+    /* background-color: #082032; */
+    border: 1px solid var(--text_color);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    /* margin: 5%; */
+    /* padding: 5%; */
+}
+.imagenes_productos{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    padding: 5%;
+    transition: 0.5s;
+}
+.imagenes_productos:hover,.imagenes_productos:active{
+    transform: scale(1.7);
+    /* position: absolute; */
+    margin: 0;
+    /* z-index: 100; */
+    cursor: pointer;
+}
+#productos section [type="checkbox"]{
+    cursor: pointer;
+    /* display: none; */
+}
+
+
+
+.titulo_producto{
+    overflow:hidden;
+    font-size:1.3rem;
+    text-align:center;
+    /*background-color:antiquewhite;*/
+    width:100%;
+    margin:0;
+    max-height:6%;
+}
+
+#productos section .check_box_container{
+    /*background-color: aqua;*/
+    width:100%;
+    height:6%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    /* display: none; */
+
+}
+
+.check_box_container h4{
+    font-size: 0.7rem;
+    margin-right: 10px;
+}
+.content_precio{
+    width: 100%;
+    height: 9%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--text_color);
+}
+.precio_producto{
+    /* width: 100%; */
+    height: 100%;
+    text-align: center;
+    font-size:1.8rem ;
+    overflow: hidden;
+    /* background-color: var(--text_color); */
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
