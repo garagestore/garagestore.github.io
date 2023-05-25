@@ -16,7 +16,7 @@
     /* margin: 5px; */
     border: 5px solid var(--three_color);
     border-radius: 10px;
-    background-color: transparent;
+    background-color: var(--backdrop);
     backdrop-filter: blur(10px);
     top: 10%;
     left: min(25%,15%);

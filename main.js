@@ -63,13 +63,60 @@ class MenuSlider{
 
 }
 
-
 class Productos{
     constructor(){
         this.lista = document.getElementById("productos").getElementsByTagName('section')
         this.productos_en_carrito
         this.se_obtubo = false
+        this.imagenes = document.getElementsByClassName("imagenes_productos");
+        this.init_events()
     }
+
+    init_events(){
+        for(let i = 0;i<this.imagenes.length;i++){
+            this.imagenes[i].image_active = false;
+                    this.imagenes[i].addEventListener("click",function(){
+                        let scale;
+                        if(this.image_active == false){
+                            scale = "1.7"
+                            this.image_active = true
+                        }
+                        else{
+                            scale = "1"
+                            this.image_active = false
+                        }
+
+                        this.style.transform = `scale(${scale})`
+                    })
+                }
+        //lo mismo pero para la galeria 
+        let imagenes = document.getElementById("galeria_productos").getElementsByTagName("img")
+        for(let i = 0;i<imagenes.length;i++){
+            imagenes[i].image_galery_active = false
+            imagenes[i].addEventListener("click",function(){
+                let width;
+                let opacity;
+                let contrast;
+                if(this.image_galery_active == false){
+                    width = "max(40vw,250px)"
+                    opacity = "1"
+                    contrast = "contrast(110%)"
+                    this.image_galery_active = true
+                }
+                else{
+                    width = "0"
+                    opacity = "0.7"
+                    contrast = "contrast(100%)"
+                    
+                    this.image_galery_active = false
+                }
+                this.style.width = width;
+                this.style.opacity = opacity;
+                this.style.filter = `${contrast}`
+
+            })
+        }
+    };
 
     obtener(){
         let productos = []

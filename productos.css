@@ -47,15 +47,17 @@
     height: 80%;
     object-fit: cover;
     padding: 5%;
+    cursor: pointer;
+    transform: scale(1);
     transition: 0.5s;
 }
-.imagenes_productos:hover,.imagenes_productos:active{
+/* .imagenes_productos:hover,.imagenes_productos:active{
     transform: scale(1.7);
-    /* position: absolute; */
+    
     margin: 0;
-    /* z-index: 100; */
+    
     cursor: pointer;
-}
+} */
 #productos section [type="checkbox"]{
     cursor: pointer;
     /* display: none; */

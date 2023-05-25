@@ -29,6 +29,7 @@
     height: 100vh;
     max-height: 100vh;
     /* max-height: max-content; */
+    background-color: var(--backdrop);
     backdrop-filter: blur(10px);
     transform: translateX(200%);
     /* transform: translateX(0%); */
