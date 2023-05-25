@@ -67,8 +67,8 @@ h1{
     top:3%;
     background-color: var(--main_color);
     padding:0 10px;
-    font-size: 2.5rem;
-    z-index: 55;
+    font-size: min(300%,10vw);
+    z-index: 50;
     /* border-radius: 10px; */
 }
 #main_section{
